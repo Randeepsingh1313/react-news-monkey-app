@@ -77,10 +77,8 @@ const News = (props)=>{
                 </InfiniteScroll>
 
             </>
-        )
-    
+        )  
 }
-
 
 News.defaultProps = {
     country: 'in',
