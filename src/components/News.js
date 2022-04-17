@@ -33,18 +33,18 @@ const News = (props)=>{
     useEffect(() => {
         updateNews(); 
         document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
-    }, [])
+    }, [props.category])
  
 
-    const handlePrevClick = async () => {
-        setPage(page-1)
-        updateNews();
-    }
+    // const handlePrevClick = async () => {
+    //     setPage(page-1)
+    //     updateNews();
+    // }
 
-    const handleNextClick = async () => { 
-        setPage(page+1)
-        updateNews()
-    }
+    // const handleNextClick = async () => { 
+    //     setPage(page+1)
+    //     updateNews()
+    // }
 
     const fetchMoreData = async () => {   
         setPage(page+1) 
