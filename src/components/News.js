@@ -33,7 +33,7 @@ const News = (props)=>{
     useEffect(() => {
         updateNews(); 
         document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
-    }, [props.category])
+    }, [props.category, updateNews])
  
 
     // const handlePrevClick = async () => {
